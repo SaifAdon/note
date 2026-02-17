@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    background-color:#0066cc ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.container{
+    height: 70vh;
+    width: 80vh;
+    background-color: white;
+    padding-left: 1.5rem;
+    position: fixed;
+    overflow: scroll;
+    padding-left: 5rem;
+    
+}
+.header{
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: .6rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+#createbtn{
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color:#0066cc ;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+}
+#createbtn:hover{
+    background-color:#4a7aaa ;
+}
+.notes{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-right: 2rem;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+.notescontent{
+    min-height: 6rem;
+    width: 12rem;
+    background-color: #0066cc;
+    border-radius: 8px;
+    padding: .5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.2rem;
+    line-height: 2rem;
+    transition: all .5s;
+}
+.notescontent:hover{
+    box-shadow: 1px 6px 15px rgba(0,0,0,0.9);
+}
+img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.popup{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 3s;
+    display: none;
+}
+.popupcontent{
+    background: #f1f1f1;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.thumbnail,
+.title,
+.dummycontent{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.dummycontent{
+    height: 120px;
+    resize: none;
+}
+#updatebtn{
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color:#0066cc ;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+}
+#closebtn{
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color:#ffc107;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+}
+#deletebtn{
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color:red;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+}
